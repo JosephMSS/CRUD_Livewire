@@ -16,12 +16,12 @@
             <td>{{ $post->title }}</td>
             <td>{{ $post->body }}</td>
             <td>
-                <button  class="btn btn-primary">
+                <button   class="btn btn-primary">
                     Editar
                 </button>
             </td>
             <td>
-                <button  class="btn btn-danger">
+                <button  wire:click="destroy({{ $post->id }})" class="btn btn-danger">
                     eliminar
                 </button>
             </td>
