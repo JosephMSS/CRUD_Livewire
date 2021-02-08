@@ -39,8 +39,8 @@ class PostComponent extends Component
     {
         $post = Post::find($id);
 
-        $this->post_id = $post->id;
         $this->title = $post->title;
+        $this->post_id = $post->id;
         $this->body = $post->body;
 
         $this->view = 'edit';
